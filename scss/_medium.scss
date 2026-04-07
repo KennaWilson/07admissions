@@ -1,0 +1,65 @@
+/* BANNER SECTION */
+.banner-section {
+    height: 400px;
+}
+
+.university-name {
+    font-size: 2rem;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+}
+
+/* NAVIGATION STUFF GOES HERE  */
+.hamburger {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: auto;
+  width: 100%;
+  height: auto;
+  transform: translateX(0) !important;
+  background: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+nav h1 {
+  position: static;
+  background: none;
+  color: white;
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  margin-right: auto;
+}
+
+.nav {
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  border-bottom: none;
+  border-right: 1px solid #333;
+}
+
+.nav li:last-child {
+  border-right: none;
+}
+
+.nav a {
+  padding: 0.75rem 1rem;
+}
+
+form {
+  max-width: 700px;
+  margin: auto;
+}

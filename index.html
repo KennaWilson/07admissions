@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fawson University Application</title>
+
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to main content</a>
+
+<div class="banner-section">
+  <img src="images/banner.jpg" alt="Fawson University banner" class="banner">
+  <h1 class="university-name">Welcome to your future at Fawson University</h1>
+</div>
+
+<button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
+
+<nav id="nav-menu">
+  <h1>Fawson University</h1>
+  <ul class="nav">
+    <li><a href="#">Students</a></li>
+    <li><a href="#" class="active">Apply</a></li>
+    <li><a href="#">Academics</a></li>
+    <li><a href="#">Services</a></li>
+    <li><a href="#">Tuition</a></li>
+  </ul>
+</nav>
+</header>
+
+<main id="main">
+  <h2 class="roboto">Apply</h2>
+  <p>Thank you for your interest in applying to Fawson University. As part of the application process, please provide the following information:</p>
+
+  <form>
+    <fieldset>
+      <legend>Contact Information</legend>
+
+      <label>First Name
+        <input type="text" required>
+      </label>
+
+      <label>Last Name
+        <input type="text" required>
+      </label>
+
+      <label>Cell Phone
+        <input type="tel" required placeholder="987-555-1234">
+      </label>
+
+      <label>Email
+        <input type="email" required placeholder="john@email.com">
+      </label>
+
+      <label>Address
+        <input type="text">
+      </label>
+
+      <label>City
+        <input type="text">
+      </label>
+
+      <label>State
+        <input type="text">
+      </label>
+
+      <label>Zip Code
+        <input type="text">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Communication Preferences</legend>
+      <label><input type="radio" name="comm"> Text Updates</label>
+      <label><input type="radio" name="comm"> Email Updates</label>
+      <label><input type="radio" name="comm"> Mail Updates</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Previous School</legend>
+      <label>School Type
+        <select>
+          <option>Please Select</option>
+          <option>High School</option>
+          <option>College</option>
+        </select>
+      </label>
+
+      <label>Graduation Date
+        <input type="date">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Education Completed</legend>
+      <label><input type="checkbox"> GED</label>
+      <label><input type="checkbox"> High School Diploma</label>
+      <label><input type="checkbox"> Associate Degree</label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Account Info</legend>
+
+      <label>Username
+        <input type="text" pattern="[A-Za-z]{5,10}" required>
+      </label>
+
+      <label>Password
+        <input type="password" minlength="6" required>
+      </label>
+    </fieldset>
+
+    <button type="submit">Create My Account</button>
+  </form>
+</main>
+
+<footer>
+  <p>&copy; 2026 • McKenna Wilson</p>
+</footer>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navMenu = document.getElementById('nav-menu');
+  
+  hamburger.addEventListener('click', function() {
+    navMenu.classList.toggle('active');
+    hamburger.classList.toggle('active');
+  });
+  
+  // Close menu when a link is clicked
+  const navLinks = navMenu.querySelectorAll('a');
+  navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      navMenu.classList.remove('active');
+      hamburger.classList.remove('active');
+    });
+  });
+</script>
+
+</body>
+</html>

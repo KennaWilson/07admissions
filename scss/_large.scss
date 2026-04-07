@@ -1,0 +1,49 @@
+
+/* BANNER SECTION */
+.banner-section {
+    height: 500px;
+}
+
+.university-name {
+    font-size: 2.5rem;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    right: auto !important;
+    bottom: 3rem !important;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+}
+
+.nav {
+  gap: 2rem;
+  padding-right: 2rem;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+}
+/* NAVIGATION STUFF GOES HERE  */
