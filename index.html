@@ -23,22 +23,23 @@
   <h1 class="university-name">Welcome to your future at Fawson University</h1>
 </div>
 
-<button class="hamburger" id="hamburger" aria-label="Toggle navigation">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
+<header class="header">
+  <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-<nav id="nav-menu">
-  <h1>Fawson University</h1>
-  <ul class="nav">
-    <li><a href="#">Students</a></li>
-    <li><a href="#" class="active">Apply</a></li>
-    <li><a href="#">Academics</a></li>
-    <li><a href="#">Services</a></li>
-    <li><a href="#">Tuition</a></li>
-  </ul>
-</nav>
+  <nav id="nav-menu">
+    <h1>Fawson University</h1>
+    <ul class="nav">
+      <li><a href="#">Students</a></li>
+      <li><a href="#" class="active">Apply</a></li>
+      <li><a href="#">Academics</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Tuition</a></li>
+    </ul>
+  </nav>
 </header>
 
 <main id="main">
@@ -84,9 +85,9 @@
 
     <fieldset>
       <legend>Communication Preferences</legend>
-      <label><input type="radio" name="comm"> Text Updates</label>
-      <label><input type="radio" name="comm"> Email Updates</label>
-      <label><input type="radio" name="comm"> Mail Updates</label>
+      <label><input type="radio" name="comm" value="text"> Text Updates</label>
+      <label><input type="radio" name="comm" value="email"> Email Updates</label>
+      <label><input type="radio" name="comm" value="mail"> Mail Updates</label>
     </fieldset>
 
     <fieldset>
@@ -106,9 +107,9 @@
 
     <fieldset>
       <legend>Education Completed</legend>
-      <label><input type="checkbox"> GED</label>
-      <label><input type="checkbox"> High School Diploma</label>
-      <label><input type="checkbox"> Associate Degree</label>
+      <label><input type="radio" name="education" value="ged"> GED</label>
+      <label><input type="radio" name="education" value="diploma"> High School Diploma</label>
+      <label><input type="radio" name="education" value="associate"> Associate Degree</label>
     </fieldset>
 
     <fieldset>
